@@ -1,0 +1,63 @@
+<div>
+  <h1>Listado de productos</h1>
+  {{! <input type='text' id='message' />
+  <button onclick='sendMessage()' id='sendMessage'>Send</button> }}
+  {{! <div
+    id='recievedMessages'
+    style='border: 5px solid rgb(112, 236, 112); width:80%'
+  ></div> }}
+
+  <label for='Product Name'>Product name: </label><input
+    type='text'
+    id='productName'
+  />
+  <label for='Product Price'>Product price: </label><input
+    type='text'
+    id='productPrice'
+  />
+  <button onclick='addProduct()' id='addProduct'>Add Product</button>
+  <br />
+  <br />
+  <div>
+    <label for='Delete Product'>Product title</label><input
+      type='text'
+      id='productId'
+    />
+
+    <button onclick='deleteProduct()' id='deleteProduct'>Delete Product</button>
+  </div>
+
+  <div id='products'></div>
+  {{! <br />
+  <br />
+  <form action='/products' mehtod='POST'>
+    <label for='Product Name'>Product name: </label><input
+      type='text'
+      id='title'
+    />
+    <label for='Product Price'>Product price: </label><input
+      type='text'
+      id='price'
+    />
+    <label for='Product description'>Product description: </label><input
+      type='text'
+      id='description'
+    />
+    <label for='Product thumbnail'>Product thumbnail: </label><input
+      type='text'
+      id='thumbnail'
+    />
+    <label for='Product code'>Product code: </label><input
+      type='text'
+      id='code'
+    />
+    <label for='Product stock'>Product stock: </label><input
+      type='text'
+      id='stock'
+    />
+    <button type='submit'>Add Product</button>
+  </form>}}
+
+</div>
+<script src='/socket.io/socket.io.js'></script>
+<script src='/js/index.js'></script>
